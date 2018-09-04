@@ -1,0 +1,20 @@
+<h1>you have opened result html page of result app</h1>
+
+<a  href="{% url 'aboutus'%}">ABOUT US</a>
+
+
+
+<a href="{% url 'home'%}">START AGAIN</a>
+
+<h2>total words are :</h2>
+<h1>{{ wordcount }}</h1>
+
+h2>word count :</h2>
+{% for word,counttotal in worddictionary %}
+
+{{word}}
+<br />
+{{ counttotal}}
+<br />
+{%endfor%}
+<!-- <h1>{{ worddictionary }}</h1> -->
