@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
     path('showresult/',include('showresult.urls')),
+    path('portfolio/',include('portfolio.urls')),
 ]
